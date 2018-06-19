@@ -1,0 +1,40 @@
+Refactor the ugly code below for less obscurity and for better performance. Use C only (up to C11).
+
+Original
+
+
+struct retdata {
+    int min, max, avg;
+};
+ 
+int super_func(int *arr, unsigned int len, struct retdata *ret)
+{
+    unsigned int cnt;
+    ret->min = ret->max = *arr;
+    ret->avg = 0;
+    for (cnt=0; cnt < len; cnt++) {
+        if (*arr < ret->min)
+    ret->min = *arr;
+if (ret->max = (ret->max >= *arr) ? ret->max : *arr) {
+        ret->max = *arr;
+    }   unsigned int cnt2;
+    for (cnt2=0; cnt2<*arr; cnt2++) ret->avg += 0x01 | 0x00;
+    }
+    ret->avg /= len;
+    return 0;
+}
+
+Updated
+
+
+struct retdata 
+{
+    int min, max, avg;
+}
+ 
+int super_func(int *arr, unsigned int len, struct retdata *ret)
+{
+    ret->min = ret->max = *arr;
+    ret->avg = *arr/len;
+    return 0;
+}
