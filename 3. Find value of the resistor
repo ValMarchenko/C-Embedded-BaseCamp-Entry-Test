@@ -1,0 +1,22 @@
+Given the LED V-I characteristic curve, find the value of the corresponding resistor (which limits the current through LED) to achieve at maximum 53 mW power dissipated on the LED. LED is connected to a 5 V voltage source through the resistor.
+
+Uvcc = Ur + Ud
+
+Ud = P/Ir
+
+Ur = Ir*R
+
+U = Ir*R + P/Ir
+
+U*Ir = Ir^2*R + P
+
+5*Ir = Ir^2*R + 53 * 10^-3
+
+Looked at V-I characteristic, I calculated that when P = 53mW the current approximately equal to 15mA
+
+5 * 15 * 10 ^ -3 = 225 * 10 ^-6 * R + 53 * 10 ^ -3
+
+75 = 0.225 * R + 53
+
+R = 22/0.225 = 98 Om
+
