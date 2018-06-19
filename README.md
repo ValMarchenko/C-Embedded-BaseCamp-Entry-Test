@@ -1,2 +1,3 @@
 # C-Embedded-BaseCamp-Entry-Test
-this repository was created for uploading my sources 
+This repository was created for uploading my sources.
+Each file was created for each question.
