@@ -1,0 +1,19 @@
+1. Write the equation of tangent line to function
+
+f(x) = 5 * sin (e^2x + pi/2)
+x0 = 1/2
+
+Answer
+
+g(x) = f(x0) + f'(x0)*(x-x0)
+
+f(x0) = f(1/2) = 5 * sin (e + pi/2) = -4.56
+
+f'(x) = 5 (cos(e^2x)' = 5*(cos(e^2x))'(e^2x)' = -10 * sin(e^2x) * e^2x
+
+f'(x0) = -10 * sin(e) * e = -11.17
+
+x - x0 = x - 1/2
+
+g(x) = 5 * sin (e + pi/2) - 10 * sin(e) * e * (x - 1/2) = 5 * sin (e + pi/2) - 10 * sin(e) * e * x - 5 * sin(e) * e = -10.14 - 11.17x 
+Answer is g (x) = -10.14 - 11.17x  
