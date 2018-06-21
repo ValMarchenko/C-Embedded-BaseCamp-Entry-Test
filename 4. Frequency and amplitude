@@ -1,0 +1,8 @@
+  Write the frequency (in radians) at which the amplitude response of the filter reaches its maximum. What is the value of the amplitude response at that frequency?
+  
+  f1 = 1/rc
+  f2 = 1/10rc
+  fs = f1 + f2 / 2 = (1/rc + 1/10rc)/2 = (11/10rc)/2 = 11/20rc
+  
+  Ku = 0.585
+  
