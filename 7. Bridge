@@ -1,0 +1,14 @@
+There is a bridge on which sensors and a base station are installed. The distance between two adjacent sensors is the same everywhere and is equal to D. The distance from the first sensor to the base station is also D. The total number of sensors is N. The communication wire must be laid from each sensor to the base station, as shown on the figure below.Task: write a program that receives N and D as command line arguments and outputs the total minimally required length of the wire to STDOUT. It is allowed to use ANY general-purpose programming language. Pay special attention to the optimality of the algorithm. Write the asymptotic complexity of your algorithm in form of a comment to the program code (using the big-O notation).
+int main(){
+int p,D,N,STDOUT;
+scanf (%d, D);
+scanf (%d, N);
+
+for (int i = 0; i <= N; i++)
+  {
+  P += D;
+  STDOUT += P;
+  }
+  
+return STDOUT
+}
